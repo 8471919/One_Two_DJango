@@ -1,5 +1,19 @@
 # One_Two_DJango
 
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div align="center">
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F8471919%2FOne_Two_DJango&count_bg=%2300000000&title_bg=%23555555&icon=redhat.svg&icon_color=%23FF0000&title=%EC%97%BC%ED%83%90%EA%BE%BC&edge_flat=false"/></a>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+  
 **원, 투, 장고**
 - ~~당신은 잠에 들 것입니다.~~
 - 이 repository는 Django를 사용한 일기장 서비스 개발이 목표입니다.

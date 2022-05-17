@@ -42,4 +42,5 @@
 
 
 ## Flow Chart Diagram
-- 아직 작성 전 입니다.
+<img width="1000" alt="스크린샷 2022-05-17 오후 1 46 35" src="https://user-images.githubusercontent.com/27190776/168731224-22911134-5fac-4f71-92b9-5ec4d35b2047.png">
+

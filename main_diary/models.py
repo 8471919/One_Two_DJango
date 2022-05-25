@@ -9,4 +9,6 @@ class Diary(models.Model):
     updated_at = models.DateTimeField()
     deleted_at = models.DateTimeField()
 
-    
+    def __str__(self):
+        return f'[{self.pk}] {self.title}'
+

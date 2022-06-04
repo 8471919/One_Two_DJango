@@ -1,1 +1,16 @@
 {% extends 'main_diary/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Home Page</title>
+{% endblock  %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'single_pages/stylesheet/index.css' %}">
+{% endblock %}
+
+{% block main %}
+<div id="main-modal">
+    <div id="main-modal__login"><a href="/login">로그인 하러 가자!</a></div>
+</div>
+{% endblock  %}

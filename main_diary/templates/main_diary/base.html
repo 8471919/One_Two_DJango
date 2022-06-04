@@ -2,8 +2,9 @@
 {% load static %}
 <html>
 <head>
-    <title>Main Page</title>
+    {% block title %}{% endblock  %}
     <link rel="stylesheet" type="text/css" href="{% static 'main_diary/stylesheet/base.css' %}">
+    {% block css %} {% endblock %}
 </head>
 
 <body>

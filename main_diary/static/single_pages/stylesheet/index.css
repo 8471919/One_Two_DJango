@@ -1,0 +1,24 @@
+#main-modal {
+    position: absolute;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: -2%;
+    margin-top: -20%;
+
+    width: 102vw;
+    height: 180vh;
+
+    background-color: gray;
+    opacity: 0.8;
+}
+
+#main-modal__login {
+    font-size: 5em;
+}
+
+#main-modal__login a {
+    color: white;
+}

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main_diary/stylesheet/base.css' %}">
 </head>
 
 <body>
-    <header style="width: 100vw; height: 100px; background: red">
+    <header name="top">
         {% include 'main_diary/header.html' %}
     </header>
 
     <main>
         {% block main %}
+
         {% endblock %}
     </main>
 

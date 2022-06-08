@@ -1,11 +1,18 @@
-{% extends 'main_diary/base.html' %}
-{% load static %}
+<!doctype html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
 
-{% block title %}
-<title>Login</title>
-{% endblock %}
-
-{% block main %}
-
-
-{% endblock  %}
+    <form method="post">
+        <div>
+            id &nbsp; <input type="text" name="id">
+        </div>
+        <div>
+            password &nbsp; <input type="password" name="password">
+        </div>
+            <input type="submit" value="로그인">
+    </form>
+</body>
+</html>

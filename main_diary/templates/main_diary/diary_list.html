@@ -1,0 +1,27 @@
+{% extends 'main_diary/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Diary List</title>
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h1>나의 일기 목록</h1>
+    </div>
+    <div>
+        {% for diary in diary_list %}
+            <div>
+                <a href="">
+                    <div>
+                        {{ diary.title }}
+                    </div>
+                    <div>
+                        {{ diary.created_at }}
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+

@@ -6,8 +6,7 @@ class Diary(models.Model):
     content= models.TextField()
     
     created_at = models.DateTimeField()
-    updated_at = models.DateTimeField()
-    deleted_at = models.DateTimeField()
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f'[{self.pk}] {self.title}'

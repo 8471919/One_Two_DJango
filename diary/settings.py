@@ -60,6 +60,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     #로그인옵션
     'allauth.socialaccount.providers.google',
+
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -162,3 +164,6 @@ LOGOUT_REDIRECT_URL = '/'
 
 #Date input
 DATE_INPUT_FORMATS = ['%d-%m-%Y']
+
+#crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

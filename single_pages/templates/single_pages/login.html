@@ -1,18 +1,23 @@
 <!doctype html>
+{% load socialaccount %}
 <html>
 <head>
     <title>Login</title>
 </head>
 <body>
+    <div style="display: flex; width: 30%; justify-content: space-evenly">
+        <div>
+            <a role="button" type="button" href="/accounts/login">Login with ID</a>
+        </div>
+        <div>
+            <a role="button" type="button" href="{% provider_login_url 'google' %}">Login with Google</a>
+        </div>
+    </div>
+    <div style="display: flex; width: 30%; justify-content: center">
+        <div>
+            <a role="button" type="button" href="/accounts/signup">Sign Up with ID</a>
+        </div>
+    </div>
 
-    <form method="post">
-        <div>
-            id &nbsp; <input type="text" name="id">
-        </div>
-        <div>
-            password &nbsp; <input type="password" name="password">
-        </div>
-            <input type="submit" value="로그인">
-    </form>
 </body>
 </html>

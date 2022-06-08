@@ -52,6 +52,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'single_pages',
     'main_diary',
+
+    #로그인
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    #로그인옵션
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +141,18 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#allauth 옵션
+AUTHENTICATION_BACKENDS = (
+	'django.contrib.auth.backends.ModelBackend',
+	'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SITE_ID = 1
+
+#이메일을 사용하되, 검증 이메일은 보내지 않음
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+LOGIN_REDIRECT_URL = '/diaries/'
+LOGOUT_REDIRECT_URL = '/'

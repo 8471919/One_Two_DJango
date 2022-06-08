@@ -15,3 +15,5 @@ class Diary(models.Model):
     def __str__(self):
         return f'[{self.pk}] {self.title} :: {self.author}'
 
+    def get_absolute_url(self):
+        return f'/diaries/{self.pk}'

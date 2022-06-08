@@ -1,0 +1,18 @@
+{% extends 'main_diary/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Delete Diary</title>
+{% endblock %}
+
+{% block main %}
+    <h1>Delete Diary</h1>
+    <hr/>
+
+    <form method="post">{% csrf_token %}
+        <h3>정말로 {{ diary.title }}를 삭제하시나요?</h3>
+        <input type="submit" value="삭제합니다."/>
+        <a href="/">취소</a>
+    </form>
+
+{% endblock %}

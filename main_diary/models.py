@@ -7,6 +7,8 @@ class Diary(models.Model):
     content= models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
+    image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
+
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField(auto_now=True)
 

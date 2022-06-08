@@ -19,7 +19,7 @@
             <div class="diaries__diary">
                 <a href="/diaries/{{ diary.pk }}">
                     <div class="diaries__title">
-                        {{ diary.title }}
+                        {{ diary.title | truncatewords:15 }}
                     </div>
                     <div class="diaries__created-at">
                         {{ diary.created_at }}

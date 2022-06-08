@@ -15,6 +15,11 @@
             <div>
                 <h1>{{ diary.title }}</h1>
                 <h4>{{ diary.created_at }}</h4>
+                {% if diary.image %}
+                    <div>
+                        <img src="{{ diary.image.url }}" alt="no image">
+                    </div>
+                {% endif %}
                 <p>{{ diary.content }}</p>
             </div>
         </div>

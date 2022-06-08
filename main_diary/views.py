@@ -1,8 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.contrib.auth.models import User
-from django.http import request
 from django.shortcuts import redirect
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from main_diary.models import Diary
 
@@ -23,4 +21,14 @@ class DiaryList(LoginRequiredMixin, ListView):
 class DiaryDetail(LoginRequiredMixin, DetailView):
     model = Diary
 
+class DiaryCreate(CreateView):
+    model = Diary
+    fields = ['title', 'content', 'image']
+
+
+class DiaryUpdate(UpdateView):
+    model = Diary
+
+class DiaryDelete(DeleteView):
+    model = Diary
 

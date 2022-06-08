@@ -39,3 +39,25 @@
 
     color: bisque;
 }
+
+
+
+/*일기 작성 버튼*/
+.diary__create {
+    margin: 2%;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+    background-color: darkgray;
+
+}
+
+.diary__create a {
+    color: black;
+}
+
+.diary__create a:hover {
+    color: white;
+    font-weight: 700;
+}

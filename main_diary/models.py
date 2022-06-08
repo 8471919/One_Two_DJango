@@ -9,7 +9,7 @@ class Diary(models.Model):
 
     image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
 
-    created_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):

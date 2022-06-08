@@ -1,6 +1,10 @@
 {% extends 'main_diary/base.html' %}
 {% load static %}
 
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main_diary/stylesheet/diary_list.css' %}">
+{% endblock %}
+
 {% block title %}
 <title>Diary List</title>
 {% endblock %}
@@ -8,15 +12,16 @@
 {% block main %}
     <div>
         <h1>나의 일기 목록</h1>
+        <hr/>
     </div>
-    <div>
+    <div class="diaries">
         {% for diary in diary_list %}
-            <div>
-                <a href="">
-                    <div>
+            <div class="diaries__diary">
+                <a href="/diaries/{{ diary.pk }}">
+                    <div class="diaries__title">
                         {{ diary.title }}
                     </div>
-                    <div>
+                    <div class="diaries__created-at">
                         {{ diary.created_at }}
                     </div>
                 </a>

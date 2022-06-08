@@ -4,5 +4,5 @@ from main_diary import views
 
 urlpatterns = [
     path('', views.DiaryList.as_view()),
-    # path('<int:pk>', )
+    path('<int:pk>', views.DiaryDetail.as_view()),
 ]

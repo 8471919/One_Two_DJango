@@ -1,0 +1,33 @@
+{% extends 'main_diary/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_diary/stylesheet/diary_detail.css' %}">
+{% endblock %}
+
+{% block title %}
+<title>{{ diary.title }} - Diary</title>
+{% endblock %}
+
+{% block main %}
+    <div class="diary">
+        <div class="diary__detail">
+            <div>
+                <h1>{{ diary.title }}</h1>
+                <h4>{{ diary.created_at }}</h4>
+                <p>{{ diary.content }}</p>
+            </div>
+        </div>
+        <div class="diary__crud">
+            수정, 삭제
+        </div>
+        <div class="diary__side">
+            <div>
+                <a href="/diaries">일기장 목록</a>
+            </div>
+            <div>
+                <a href="#top">맨위로</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

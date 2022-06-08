@@ -1,0 +1,41 @@
+.diaries {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diaries__diary {
+    margin: 5px 0px;
+    border-right: 0.5px solid gray;
+
+    background-color: saddlebrown;
+}
+
+.diaries__diary a {
+    display:block;
+    margin: 5px;
+    padding:20px;
+}
+
+.diaries__diary a:hover {
+    background-color: aqua;
+}
+
+.diaries__diary a:hover > .diaries__title , .diaries__diary a:hover > .diaries__created-at {
+    color: black;
+}
+
+.diaries__title {
+
+    width: 140px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+
+}
+
+.diaries__created-at {
+    font-size: 0.5em;
+
+    color: bisque;
+}

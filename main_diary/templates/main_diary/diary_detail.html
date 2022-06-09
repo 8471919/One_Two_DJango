@@ -20,7 +20,7 @@
                         <img src="{{ diary.image.url }}" alt="no image">
                     </div>
                 {% endif %}
-                <p>{{ diary.content }}</p>
+                <p>{{ diary.get_content_markdown | safe }}</p>
             </div>
         </div>
         <div class="diary__wrap-crud">

@@ -61,7 +61,8 @@ INSTALLED_APPS = [
     #로그인옵션
     'allauth.socialaccount.providers.google',
 
-    'crispy_forms'
+    'crispy_forms',
+    'markdownx',
 ]
 
 MIDDLEWARE = [

@@ -2,9 +2,13 @@ from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
+from markdown import markdown
+from markdownx.models import MarkdownxField
+
+
 class Diary(models.Model):
     title = models.CharField(max_length=30)
-    content= models.TextField()
+    content= MarkdownxField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
@@ -17,3 +21,6 @@ class Diary(models.Model):
 
     def get_absolute_url(self):
         return f'/diaries/{self.pk}'
+
+    def get_content_markdown(self):
+        return markdown(self.content)

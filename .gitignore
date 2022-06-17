@@ -139,4 +139,4 @@ _media/
 
 # Secret key
 secrets.json
-
+init_su.sh

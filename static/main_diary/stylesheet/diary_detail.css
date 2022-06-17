@@ -1,0 +1,36 @@
+.diary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.diary__detail {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.diary__wrap-crud {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 5%;
+}
+
+.diary__crud {
+    margin-right: 1%;
+    background-color: lightgray;
+}
+
+.diary__crud-btn {
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.diary__side {
+    display: flex;
+    justify-content: space-between;
+}

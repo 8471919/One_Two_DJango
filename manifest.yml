@@ -1,0 +1,8 @@
+---
+applications:
+- name: onetwodjango
+  buildpack: python_buildpack
+  memory: 512M
+  disk: 1024M
+  instances: 1
+  command: waitress-serve --port=8080 diary.wsgi:application
